@@ -2,16 +2,16 @@
  * This file is part of ElasticFusion.
  *
  * Copyright (C) 2015 Imperial College London
- * 
- * The use of the code within this file and all code within files that 
- * make up the software that is ElasticFusion is permitted for 
- * non-commercial purposes only.  The full terms and conditions that 
- * apply to the code within this file are detailed within the LICENSE.txt 
- * file and at <http://www.imperial.ac.uk/dyson-robotics-lab/downloads/elastic-fusion/elastic-fusion-license/> 
- * unless explicitly stated.  By downloading this file you agree to 
+ *
+ * The use of the code within this file and all code within files that
+ * make up the software that is ElasticFusion is permitted for
+ * non-commercial purposes only.  The full terms and conditions that
+ * apply to the code within this file are detailed within the LICENSE.txt
+ * file and at <http://www.imperial.ac.uk/dyson-robotics-lab/downloads/elastic-fusion/elastic-fusion-license/>
+ * unless explicitly stated.  By downloading this file you agree to
  * comply with these terms.
  *
- * If you wish to use any of this code for commercial purposes then 
+ * If you wish to use any of this code for commercial purposes then
  * please email researchcontracts.engineering@imperial.ac.uk.
  *
  * This file contains a mapping between GPU identifier strings given by CUDA
@@ -84,7 +84,7 @@ class GPUConfig
             rgbStepMap["GeForce GTX 970"] = std::pair<int, int>(160, 64);
             rgbResMap["GeForce GTX 970"] = std::pair<int, int>(128, 272);
             so3StepMap["GeForce GTX 970"] = std::pair<int, int>(96, 64);
-               
+
             icpStepMap["GeForce GTX 965M"] = std::pair<int, int>(256, 32);
             rgbStepMap["GeForce GTX 965M"] = std::pair<int, int>(224, 16);
             rgbResMap["GeForce GTX 965M"] = std::pair<int, int>(384, 480);
@@ -119,6 +119,11 @@ class GPUConfig
             rgbStepMap["GeForce GTX 1070"] = std::pair<int, int>(128, 96);
             rgbResMap["GeForce GTX 1070"] = std::pair<int, int>(256, 464);
             so3StepMap["GeForce GTX 1070"] = std::pair<int, int>(256, 48);
+
+            icpStepMap["GeForce GTX 2060"] = std::pair<int, int>(272, 48);
+            rgbStepMap["GeForce GTX 2060"] = std::pair<int, int>(192, 48);
+            rgbResMap["GeForce GTX 2060"] = std::pair<int, int>(416, 480);
+            so3StepMap["GeForce GTX 2060"] = std::pair<int, int>(32, 176);
 
             if(icpStepMap.find(dev) == icpStepMap.end())
             {

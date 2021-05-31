@@ -52,7 +52,7 @@ rm -rf GPUTest/build/
 rm -rf GUI/build/
 
 
-cd ./Core
+cd ./ElasticFusion/Core
 mkdir build
 cd build
 cmake ../src
